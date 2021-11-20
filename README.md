@@ -61,6 +61,16 @@ To add additional dependencies, for example other CDK libraries, just add
 them to your `setup.py` file and rerun the `pip install -r requirements.txt`
 command.
 
+## Usage
+
+After `cdk deploy` completed, open the Jupyter notebook on your Amazon SageMaker notebook instance.
+Then, upload the `*.ipynb` files into your SageMaker notebook that you use to complete the rest of the lab.
+
+| *.ipynb file | kernel spec |
+|--------------|-------------|
+| semantic-text-search-tf.ipynb | `conda_tensorflow_p36` |
+| semantic-text-search-tf2.ipynb | `conda_tensorflow2_p36` |
+
 ## Useful commands
 
  * `cdk ls`          list all stacks in the app
