@@ -1,7 +1,9 @@
 
 # Vector-Based Semantic Search using Amazon OpenSearch Service
 
-This is a blank project for Python development with CDK.
+![vector-based-semantic-text-search-arch](./vector-based-semantic-text-search-arch.svg)
+
+This is a Vector-based Semantic Text Search project.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
