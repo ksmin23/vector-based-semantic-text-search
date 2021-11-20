@@ -46,20 +46,20 @@ class VectorBasedSemanticSearchStack(cdk.Stack):
     # for example,
     # cdk -c vpc_name=your-existing-vpc syth
     #
-    vpc_name = self.node.try_get_context('vpc_name')
-    vpc = aws_ec2.Vpc.from_lookup(self, 'ExistingVPC',
-      is_default=True,
-      vpc_name=vpc_name
-    )
-
-    # vpc = aws_ec2.Vpc(self, "OpenSearchVPC",
-    #   max_azs=3,
-    #   gateway_endpoints={
-    #     "S3": aws_ec2.GatewayVpcEndpointOptions(
-    #       service=aws_ec2.GatewayVpcEndpointAwsService.S3
-    #     )
-    #   }
+    # vpc_name = self.node.try_get_context('vpc_name')
+    # vpc = aws_ec2.Vpc.from_lookup(self, 'ExistingVPC',
+    #   is_default=True,
+    #   vpc_name=vpc_name
     # )
+
+    vpc = aws_ec2.Vpc(self, "OpenSearchVPC",
+      max_azs=3,
+      gateway_endpoints={
+        "S3": aws_ec2.GatewayVpcEndpointOptions(
+          service=aws_ec2.GatewayVpcEndpointAwsService.S3
+        )
+      }
+    )
 
     #XXX: https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_ec2/InstanceClass.html
     #XXX: https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_ec2/InstanceSize.html#aws_cdk.aws_ec2.InstanceSize
