@@ -83,6 +83,7 @@ Enjoy!
 
 ## References
 
+ * [Try semantic search with the Amazon OpenSearch Service vector engine (2023-08-21)](https://aws.amazon.com/blogs/big-data/try-semantic-search-with-the-amazon-opensearch-service-vector-engine/)
  * [Text similarity search with vector fields](https://www.elastic.co/blog/text-similarity-search-with-vectors-in-elasticsearch)
  * [Vector-Based Semantic Search using Elasticsearch](https://medium.com/version-1/vector-based-semantic-search-using-elasticsearch-48d7167b38f5)
  * [Universal Sentence Encoder (TF2.0 Version 4)](https://tfhub.dev/google/universal-sentence-encoder/4)
